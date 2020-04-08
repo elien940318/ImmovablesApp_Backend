@@ -35,7 +35,10 @@ OH chan-hae
     Update a Readme.md.
     Create a loginView.
 > ### 2020-04-05
-    Update a App, LoginScreen(connect MainScreen)
+    Update a App, LoginScreen(connect MainScreen).
+> ### 2020-04-08
+    Catch a Cycle warning in Login.js.
+    Complete UI Home.js
 
 
 Kim jong-min

@@ -4,7 +4,6 @@ import { Icon } from 'native-base';
 import { createAppContainer } from 'react-navigation'
 import {createMaterialTopTabNavigator } from 'react-navigation-tabs'
 
-import Login from './Login/Login' 
 import home from './bottom/home'
 import like from './bottom/like'
 import map from './bottom/map'
