@@ -7,13 +7,11 @@ import ColumnCardComponent  from './../Util/HomeUtil/ColumnCardComponent';
 import Carousel2 from './../Util/HomeUtil/Carousel2'
 import myData from './../Util/test.json';
 
-
 const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7);
 const ITEM_HEIGHT = Math.round(ITEM_WIDTH * 3 / 4);
 
 export default class home extends Component {
-
 
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
