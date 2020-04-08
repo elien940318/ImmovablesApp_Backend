@@ -4,7 +4,6 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 import { Icon, Header, Content, Footer } from 'native-base'; 
 import CardComponent  from '../CardComponent'; 
 
-
 export default class like extends Component {
 
     static navigationOptions = {
@@ -12,6 +11,8 @@ export default class like extends Component {
             <Icon name='ios-home' style={{color: tintColor}}/>
         )
     }
+
+    
 
     constructor(props) {  
         super(props);  

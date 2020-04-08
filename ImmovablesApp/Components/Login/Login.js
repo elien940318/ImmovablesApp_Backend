@@ -12,7 +12,7 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack'
 import { Icon } from 'native-base';
-import CustomButton from '../Util/CustomButton';
+import CustomButton from '../Util/LoginUtil/CustomButton';
 import Main from './../MainScreen'
 
 export default class Login extends Component {

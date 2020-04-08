@@ -10,13 +10,16 @@ import RecentT from '../LikeTab/RecentT';
 import ContectedO from '../LikeTab/ContectedO';
 import SubsT from '../LikeTab/SubsT';
 import SubsR from '../LikeTab/SubsR';
+import plus from '../bottom/plus'
 
-const AppTabNavigator = createMaterialTopTabNavigator({
+const AsppTabNavigator = createMaterialTopTabNavigator({
   본방 : {screen: RecentR},
   본단지: {screen: RecentT},
   찜한방: {screen: SubsR},
   찜한단지: {screen: SubsT},
-  부동산: {screen: ContectedO}
+  부동산: {screen: ContectedO},
+  더보기: {screen:plus}
+
 }, {
 animationEnabled: true,
 swipeEnabled: true,
@@ -35,11 +38,11 @@ tabBarOptions: {
   inactiveTintColor:'#d1cece',
   upperCaseLabel: false,
   showLabel: true,
-  showIcon:true,
+  showIcon:false,
 }
 });
 
-const AppTabContainet = createAppContainer(AppTabNavigator);
+const AsppTabContainet = createAppContainer(AsppTabNavigator);
 
 export default class home extends Component {
 
@@ -82,13 +85,13 @@ export default class home extends Component {
     render() {
         return (
           <Container style={style.container }>
-             <Header style ={{ height: 910, flexDirection: 'column'}}>
+             <Header style ={{ height: 110, flexDirection: 'column'}}>
                 <View style={{ alignItems: 'center', justifyContent: 'center'}} >
                   <Text style={{ alignItems:'center' }}>관심목록</Text>
                 </View>
                 <View style={{}}>
                     <ScrollView horizontal={true}>
-                    <AppTabContainet/>
+                      <AppTabContainet/>
                     </ScrollView>
                 </View>
             </Header>
